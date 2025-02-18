@@ -1,10 +1,14 @@
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #f5f5db;
   }
 
-  .main-container {
-    display: flex;
-    background-color: #f5f5db;
+  .pricing-table-header {
+    display: block;
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    background-color:#e1defd;
   }
 
   .main-title {
@@ -39,8 +43,6 @@ body {
 
   .pricing-card {
     display: inline;
-    /* justify-content: center;
-    align-items: center; */
     text-align: center;
     padding-bottom: 20px;
     height: 515px;
@@ -111,9 +113,39 @@ body {
     padding: 10px 20px;
     background-color: #f5f5db;
     font-size: 16px;
-    font-weight: 600;
+    width: 70%;
     border: 2px solid #7069b9;
     border-radius: 5px;
     cursor: pointer;
     margin: 30px auto;
+  }
+
+  .pricing-card-button-font-strong {
+    font-weight: 600;
+    color: #7069b9;
+  }
+
+  .pricing-card-button-font-normal {
+    color: #7069b9;
+    font-weight: 400;
+  }
+
+  .all-subscriptions-button {
+    display: block;
+    width: 40%;
+    padding: 10px 10px;
+    background-color: #f5f5db;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+    margin: 30px auto;
+    color: #7069b9;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    box-shadow: none;
+  }
+
+  .all-subscriptions-button:hover {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   }
