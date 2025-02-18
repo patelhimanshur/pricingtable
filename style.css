@@ -4,9 +4,6 @@ body {
 
   .main-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     background-color: #f5f5db;
   }
 
@@ -42,12 +39,13 @@ body {
 
   .pricing-card {
     display: inline;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
+    /* justify-content: center;
+    align-items: center; */
+    text-align: center;
+    padding-bottom: 20px;
     height: 515px;
     width: 270px;
-    margin: 20px;
+    margin: 10px;
     border-radius: 10px;
   }
 
@@ -70,6 +68,7 @@ body {
   .pricing-card-image {
     display: block;
     width: 100%;
+    margin-top: 20px;
   }
 
   .pricing-card-title {
@@ -87,25 +86,34 @@ body {
     font-weight: 200;
     margin: 20px 0;
     color: #b3afa8;
+    height: 50px;
+  }
+
+  .pricing-card-description-color {
+    color: #f5f5db;
   }
 
   .pricing-card-price {
     text-align: center;
-    font-size: 32px;
+    font-size: 18px;
     font-weight: 600;
-    margin: 20px 0;
     text-decoration: none;
+    height: 25px;
+    text-transform: uppercase;
+  }
+
+  .pricing-card-price:hover {
+    text-decoration: underline;
   }
   
   .pricing-card-button {
     display: block;
     padding: 10px 20px;
     background-color: #f5f5db;
-    color: #000;
     font-size: 16px;
     font-weight: 600;
-    text-transform: uppercase;
     border: 2px solid #7069b9;
     border-radius: 5px;
     cursor: pointer;
+    margin: 30px auto;
   }
